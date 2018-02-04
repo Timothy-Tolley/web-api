@@ -13,6 +13,12 @@
     "type": "git",
     "url": "git+https://github.com/dev-academy-challenges/boilerplate-express-api.git"
   },
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ]
+  },
   "author": "EDA",
   "license": "ISC",
   "bugs": {
