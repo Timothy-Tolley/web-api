@@ -1,17 +1,17 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 class Users extends React.Component {
-  constructor (props) {
-    super(props)
-  }
   render () {
     return (
       <div>
         {this.props.users.map(user => {
           return (
-            <p key={user.id}>
-              {user.name}
-            </p>
+            <Link to={`/users/${user.id}`} key={user.id}>
+              <p >
+                {user.name}
+              </p>
+            </ Link>
           )
         }
         )}
